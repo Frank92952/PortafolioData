@@ -52,9 +52,10 @@ function Home() {
 
   return (
     <>
-          <Header />
-          <div className="flex bg-[#2b4150] h-[675px] mt-[64px]">
-            <div className="w-1/12 flex flex-col justify-between pb-8 pl-4 ">
+            <Header />
+          <div className="flex bg-[#2b4150] h-[739px] ">
+          
+            <div className="w-1/12 flex flex-col justify-between pb-8 pl-4  ">
               <div></div>
               <div className="flex flex-col gap-3 text-white">
                 <a href="https://www.linkedin.com/in/frank-caysahuana-delao-720315254/">
@@ -71,7 +72,7 @@ function Home() {
                 </a>
               </div>
             </div>
-            <div className="w-10/12 pt-16 pb-20">
+            <div className="w-10/12 pt-36 pb-20">
               <div className="flex gap-20 pl-5 pr-5 ">
                 <div className="flex flex-col gap-4 ">
                   <div className="font-serif text-[#FFFFFF]">
@@ -106,12 +107,12 @@ function Home() {
 
                   <div className=" flex gap-6 text-[25px] mt-8">
                     <a href="#des">
-                      <button className="rounded-xl border-2 pl-2 pr-2 border-[#48bed0] text-[#48bed0] hover:text-[#48bed0] hover:bg-white hover:border-[#48d0b7]">
+                      <button className=" transition ease-in-out delay-150 text-white rounded-xl border-2 pl-2 pr-2 border-[#48d0b7]  hover:-translate-y-1 hover:scale-110 hover:bg-white hover:text-[#48bed0] duration-300 ...">
                         Descargar CV
                       </button>
                     </a>
                     <a href="#contacto">
-                      <button className="rounded-xl border-2 pl-2 pr-2 border-[#48d0b7] bg-[#48d0b7] text-white hover:border-[#48bed0] hover:text-[#48bed0] hover:bg-white">
+                      <button className=" transition ease-in-out delay-150 bg-[#48d0b7]  text-white rounded-xl border-2 pl-2 pr-2 border-[#48d0b7]  hover:-translate-y-1 hover:scale-110 hover:bg-white hover:text-[#48bed0] duration-300 ...">
                         Contacto
                       </button>
                     </a>
@@ -119,7 +120,7 @@ function Home() {
                 </div>
 
                 <div>
-                  <img src={Frank} className="h-[480px] w-[950px]" />
+                  <img src={Frank} className="h-[480px] w-[950px] rounded-xl border-2 border-[#48d0b7]" />
                 </div>
               </div>
             </div>
