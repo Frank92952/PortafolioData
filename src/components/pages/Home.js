@@ -120,7 +120,7 @@ function Home() {
                 </div>
 
                 <div>
-                  <img src={Frank} className="h-[480px] w-[950px] rounded-xl border-2 border-[#48d0b7]" />
+                  <img src={Frank} className="h-[480px] w-[950px] rounded-xl border-2 border-[#48d0b7] " />
                 </div>
               </div>
             </div>

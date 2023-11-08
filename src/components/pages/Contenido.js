@@ -2,7 +2,11 @@ import React from 'react'
 
 function Contenido() {
   return (
-    <div className='flex bg-[#2b4150] h-[739px]'>Contenido</div>
+    <div className='flex bg-red-200 h-[739px]'>
+      <div>
+     
+      </div>
+    </div>
   )
 }
 

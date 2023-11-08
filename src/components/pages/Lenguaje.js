@@ -4,9 +4,7 @@ import Php from "../Img/php.png";
 import Css from "../Img/css.jpg";
 import Reac from "../Img/react.png";
 import Sql from "../Img/sql.png";
-import Tailwind from "../Img/tailwind.png"
-
-
+import Tailwind from "../Img/tailwind.png";
 
 function Lenguaje() {
   const initialCardsData = [
@@ -38,37 +36,23 @@ function Lenguaje() {
     {
       id: 6,
       image: Tailwind,
-      text: "Mi experiencia con Tailwind CSS me ha proporcionado las habilidades necesarias para crear interfaces de usuario modernas y atractivas de manera eficiente. Estoy emocionado por las oportunidades que se presentan en el mundo laboral y estoy seguro de que mi conocimiento  será un activo valioso en mi carrera profesional, ya que esta biblioteca se ha convertido en una herramienta esencial en el desarrollo web actual."
+      text: "Mi experiencia con Tailwind CSS me ha proporcionado las habilidades necesarias para crear interfaces de usuario modernas y atractivas de manera eficiente. Estoy emocionado por las oportunidades que se presentan en el mundo laboral y estoy seguro de que mi conocimiento será un activo valioso en mi carrera profesional, ya que esta biblioteca se ha convertido en una herramienta esencial en el desarrollo web actual."
     },
-    // Puedes agregar más tarjetas con contenido diferente aquí
   ];
 
   const [cardsData, setCardsData] = useState(initialCardsData);
-
-  const handleFlip = (cardId) => {
-    // Actualizar el estado de la tarjeta específica cuando se hace clic en ella
-    setCardsData((prevCardsData) => {
-      return prevCardsData.map((card) => {
-        if (card.id === cardId) {
-          return { ...card, isFlipped: !card.isFlipped };
-        }
-        return card;
-      });
-    });
-  };
 
   const firstThreeCards = cardsData.slice(0, 3);
   const nextThreeCards = cardsData.slice(3, 6);
 
   return (
-    <div className="flex flex-col bg-red-200 h-[1060px] pt-14">
+    <div className="flex flex-col bg-[#2b4150] h-[1060px] pt-14">
       <h1 className='text-center text-[55px] font-extrabold text-white'>HABILIDADES</h1>
       <div className='flex justify-center gap-16 mt-6'>
         {firstThreeCards.map((card) => (
-          <div key={card.id} className={`card ${card.isFlipped ? 'flipped' : ''}`} onClick={() => handleFlip(card.id)}>
-            <div className="card-front">
-              <p className='fixed text-2xl font-bold text-center text-[#48d0b7] animate-pulse mt-80'>CLICK</p>
-              <img className='h-full w-full rounded-[20px] animate-pulse' src={card.image} alt={`Card ${card.id}`} />
+          <div key={card.id} className="card ">
+            <div className="card-front ">
+              <img className='h-full w-full rounded-[20px] ' src={card.image} alt={`Card ${card.id}`} />
             </div>
             <div className="card-back">
               <p className='text-justify pl-3 pr-3'>{card.text}</p>
@@ -78,10 +62,9 @@ function Lenguaje() {
       </div>
       <div className='flex justify-center gap-16 mt-6'>
         {nextThreeCards.map((card) => (
-          <div key={card.id} className={`card ${card.isFlipped ? 'flipped' : ''}`} onClick={() => handleFlip(card.id)}>
+          <div key={card.id} className="card">
             <div className="card-front">
-              <p className='fixed text-2xl font-bold text-center text-[#48d0b7] animate-pulse mt-80'>CLICK</p>
-              <img className='h-full w-full rounded-[20px] animate-pulse' src={card.image} alt={`Card ${card.id}`} />
+              <img className='h-full w-full rounded-[20px] ' src={card.image} alt={`Card ${card.id}`} />
             </div>
             <div className="card-back">
               <p className='text-justify pl-3 pr-3'>{card.text}</p>

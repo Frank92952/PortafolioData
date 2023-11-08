@@ -5,7 +5,7 @@ import About from './components/pages/About';
 import Lenguaje from './components/pages/Lenguaje';
 import Contenido from './components/pages/Contenido';
 import Contact from './components/pages/Contact';
-
+import Footer from './components/Footer';
 function App() {
   return (
     <div>
@@ -30,6 +30,7 @@ function App() {
       
       
       </Router>
+      <Footer />
     </div>
   );
 }
