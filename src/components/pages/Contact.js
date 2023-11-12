@@ -51,7 +51,7 @@ function Contact() {
             type="email"
             placeholder="Ingresar Email"
             id="email"
-            className=" border-b-2 bg-transparent outline-none text-black placeholder:text-white  border-[#FFFF00] "
+            className=" border-b-2 bg-transparent outline-none text-white placeholder:text-white  border-[#FFFF00] "
             onFocus={handleFocus}
           />
           <label htmlFor="text" className="font-bold text-[#FFFF00] ">
@@ -61,7 +61,7 @@ function Contact() {
             type="text"
             placeholder="Ingresar Asunto"
             id="asunto"
-            className=" border-b-2 bg-transparent outline-none text-black placeholder:text-white  border-[#FFFF00] "
+            className=" border-b-2 bg-transparent outline-none text-white placeholder:text-white  border-[#FFFF00] "
             onFocus={handleFocus}
           />
           <label htmlFor="textarrea" className="font-bold text-[#FFFF00]">
@@ -76,7 +76,7 @@ function Contact() {
           <div className="flex justify-center gap-4 mt-4 ml-1">
             <button className="transition ease-in-out delay-150 bg-[#FFFF00] rounded-md text-black  font-bold font-serif text-[20px] p-2  hover:-translate-y-1 hover:scale-110 hover:bg-white hover:text-[#48bed0] duration-300 ..."
             onFocus={handleFocus}>
-              Iniciar Sesión
+              Enviar
             </button>
 
           </div>
