@@ -47,7 +47,7 @@ function Header() {
         >
           Lenguaje
         </a>
-        <a
+        {/* <a
           href="#contenido"
           onClick={() => handleLinkClick('contenido')}
           className={`${
@@ -57,7 +57,7 @@ function Header() {
           }`}
         >
           Contenido
-        </a>
+        </a> */}
         <a
           href="#contacto"
           onClick={() => handleLinkClick('contacto')}

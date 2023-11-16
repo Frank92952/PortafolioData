@@ -3,6 +3,7 @@ import { BsFacebook, BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
 import Frank from "../Img/frank.jpg";
 import About from "./About";
 import Header from "../header";
+import CV_PDF from "./Cv-CaysahuanaDelaoFrankJhon.pdf"
 function Home() {
   const initialText = "DESARROLLADOR WEB FRONT-END";
   const [displayedText, setDisplayedText] = useState("");
@@ -50,6 +51,14 @@ function Home() {
     };
   }, []);
 
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = CV_PDF; // Utiliza la variable importada para la ruta del PDF
+    link.download = 'Frank_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <>
             <Header />
@@ -107,7 +116,8 @@ function Home() {
 
                   <div className=" flex gap-6 text-[25px] mt-8">
                     <a href="#des">
-                      <button className=" transition ease-in-out delay-150 text-white rounded-xl border-2 pl-2 pr-2 border-[#48d0b7]  hover:-translate-y-1 hover:scale-110 hover:bg-white hover:text-[#48bed0] duration-300 ...">
+                      <button className=" transition ease-in-out delay-150 text-white rounded-xl border-2 pl-2 pr-2 border-[#48d0b7]  hover:-translate-y-1 hover:scale-110 hover:bg-white hover:text-[#48bed0] duration-300 ..."
+                       onClick={handleDownloadCV}>
                         Descargar CV
                       </button>
                     </a>

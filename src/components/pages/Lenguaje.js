@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import JavaImage from "../Img/java.jpg";
 import Php from "../Img/php.png";
 import Css from "../Img/css.jpg";
-import Reac from "../Img/react.png";
+import Js from "../Img/js.jpg";
 import Sql from "../Img/sql.png";
 import Tailwind from "../Img/tailwind.png";
 
@@ -25,8 +25,8 @@ function Lenguaje() {
     },
     {
       id: 4,
-      image: Reac,
-      text: "Una de las principales lecciones que he aprendido es la importancia de los componentes en React. React se basa en la creación de componentes reutilizables que representan diferentes partes de una aplicación web. Esto facilita la construcción de interfaces de usuario complejas y dinámicas al dividirlas en componentes más pequeños y manejables."
+      image: Js,
+      text: "Una de las lecciones más fundamentales que he adquirido es la importancia de los módulos y funciones en JavaScript. El lenguaje se basa en la creación de funciones y módulos reutilizables que representan diferentes partes de una aplicación web. Esta modularidad facilita la construcción de aplicaciones complejas al dividirlas en funciones más pequeñas y manejable."
     },
     {
       id: 5,

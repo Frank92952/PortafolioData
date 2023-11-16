@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom'; // Importa BrowserRo
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Lenguaje from './components/pages/Lenguaje';
-import Contenido from './components/pages/Contenido';
+// import Contenido from './components/pages/Contenido';
 import Contact from './components/pages/Contact';
 import Footer from './components/Footer';
 function App() {
@@ -19,9 +19,9 @@ function App() {
         <section id='lenguaje'>
           <Lenguaje />
         </section>
-        <section id='contenido'>
+        {/* <section id='contenido'>
           <Contenido />
-        </section>
+        </section> */}
         <section id='contacto'>
           <Contact />
         </section>
