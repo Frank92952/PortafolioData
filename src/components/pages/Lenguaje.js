@@ -26,7 +26,7 @@ function Lenguaje() {
     {
       id: 4,
       image: Js,
-      text: "Una de las lecciones más fundamentales que he adquirido es la importancia de los módulos y funciones en JavaScript. El lenguaje se basa en la creación de funciones y módulos reutilizables que representan diferentes partes de una aplicación web. Esta modularidad facilita la construcción de aplicaciones complejas al dividirlas en funciones más pequeñas y manejable."
+      text: "Una de las lecciones más fundamentales que he adquirido es la importancia de los módulos y funciones en JavaScript. El lenguaje se basa en la creación de funciones y módulos reutilizables que representan diferentes partes de una aplicación web. Esta modularidad facilita la construcción de aplicaciones complejas al dividirlas en funciones más pequeñas y manejables."
     },
     {
       id: 5,
@@ -42,32 +42,17 @@ function Lenguaje() {
 
   const [cardsData, setCardsData] = useState(initialCardsData);
 
-  const firstThreeCards = cardsData.slice(0, 3);
-  const nextThreeCards = cardsData.slice(3, 6);
-
   return (
-    <div className="flex flex-col bg-[#2b4150] h-[1060px] pt-14">
-      <h1 className='text-center text-[55px] font-extrabold text-white'>HABILIDADES</h1>
-      <div className='flex justify-center gap-16 mt-6'>
-        {firstThreeCards.map((card) => (
+    <div className="flex flex-col bg-[#2b4150] h-[1090px] max-lg:h-[1462px] pt-14 max-lg:pl-2 max-lg:pr-2 max-sm:h-[2748px]">
+      <h1 className='text-center text-[55px] max-sm:text-[45px] font-extrabold text-white'>HABILIDADES</h1>
+      <div className='grid grid-cols-3  max-lg:grid-cols-2 max-sm:grid-cols-1 justify-center mr-4 ml-14 gap-10 xl:mr-20 xl:ml-40 max-lg:gap-2 mt-6 max-sm:ml-5'>
+        {cardsData.map((card) => (
           <div key={card.id} className="card ">
             <div className="card-front ">
               <img className='h-full w-full rounded-[20px] ' src={card.image} alt={`Card ${card.id}`} />
             </div>
             <div className="card-back">
-              <p className='text-justify pl-3 pr-3'>{card.text}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-      <div className='flex justify-center gap-16 mt-6'>
-        {nextThreeCards.map((card) => (
-          <div key={card.id} className="card">
-            <div className="card-front">
-              <img className='h-full w-full rounded-[20px] ' src={card.image} alt={`Card ${card.id}`} />
-            </div>
-            <div className="card-back">
-              <p className='text-justify pl-3 pr-3'>{card.text}</p>
+              <p className='text-justify max-lg:text-[20px] p-2  '>{card.text}</p>
             </div>
           </div>
         ))}
@@ -77,6 +62,7 @@ function Lenguaje() {
 }
 
 export default Lenguaje;
+
 
 
 

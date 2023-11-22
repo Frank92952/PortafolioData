@@ -60,7 +60,7 @@ function Contact() {
     <div className="relative">
       <img className="absolute h-full w-full " src={Fondo} alt="Fondo" />
       <div
-        className="relative flex flex-col items-center h-[739px] pt-14"
+        className="relative flex flex-col items-center h-[739px] max-lg:h-[669px] max-sm:h-[720px] pt-14 max-lg:pt-3 max-sm:pt-14"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
@@ -68,7 +68,7 @@ function Contact() {
           CONTACTOS
         </h1>
         <div
-          className={`flex flex-col gap-4 w-[650px] rounded-lg bg-blue-300 bg-opacity-20 p-6 border-t-4 border-[#FFFF00] ${
+          className={`flex flex-col gap-4 max-lg:gap-0 w-[650px] max-sm:w-[330px] rounded-lg bg-blue-300 bg-opacity-20 p-6 border-t-4 border-[#FFFF00] max-sm:text-[12px] ${
             isMouseOver ? "bounce-animation2" : ""
           }`}
         >
