@@ -56,7 +56,7 @@ function Footer() {
       <div className="flex flex-col justify-center xl:pl-[84px] max-lg:pl-[22px] pl-[55px] gap-6 left-0 w-1/12 max-sm:hidden  ">
         <div className="bolita w-10 h-10 bg-[#48d0b7] rounded-full animate-bounce duration-500"></div>
         <div className="bolita w-10 h-10 bg-[#FFFF00] rounded-full animate-bounce duration-500"></div>
-        <div className="bolita w-10 h-10 bg-white rounded-full animate-bounce duration-500"></div>
+        <div className="bolita w-10 h-10 bg-red rounded-full animate-bounce duration-500"></div>
       </div>
     </div>
   );
